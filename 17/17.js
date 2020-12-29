@@ -6,4 +6,15 @@ function createCookie(cookieName, cookieValue, daysToExpire) {
 	document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
 }
 
+function displayAllCookies() {
+	var allCookieArray = document.cookie.split(';');
+	
+	console.log("\n");
+	console.log(document.cookie);
+	console.log("displayAllCookies.length " + allCookieArray.length);
+
+	for(var i=0; i<allCookieArray.length; i++){
+		console.log(allCookieArray[i]);
+	}
+}
 
