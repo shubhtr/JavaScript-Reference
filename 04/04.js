@@ -8,3 +8,8 @@ students[4] = "Rose";
 
 console.log(students);
 
+students.push("George");
+students.push("Jack");
+
+console.log(students);
+
