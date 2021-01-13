@@ -45,6 +45,30 @@ Type, Example   | Description
 `const PI = 3.14`                                   |   Constant numbers
 `var name = {firstName:"John", lastName:"Doe"}`     |   Objects
 
+## Arrays
+
+    var subjectlist = ["math", "science", "history", "computer"];
+
+Arrays can perform the following functions:
+
+Function | Description
+--- | ---
+`concat()`          |   concatenate different arrays into one
+`join()`            |   joins all elements of one array as a string
+`indexof()`         |   returns the index (first position) of an element in the array
+`lastindexof()`     |   returns the last position of an element in the array
+`sort()`            |   alphabetic sort of array elements
+`reverse()`         |   sort elements in descending order
+`valueof()`         |   primitive value of the element specified
+`slice()`           |   cut a portion of one array and put it in a new array
+`splice()`          |   add elements to an array in a specific manner and position
+`unshift()`         |   add new element to the array in the beginning
+`shift()`           |   remove the first element of the array
+`pop()`             |   remove the last element of the array
+`push()`            |   add new element to the array as the last one
+`tostring()`        |   prints the string value of the elements of the array
+
+
 ## Object creation
 
 ### Object Literal
