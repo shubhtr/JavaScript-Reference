@@ -107,9 +107,31 @@ Share data across objects.
 
         f() {}
         g() {}
+
+        setX(status) {
+            this.x = status;
+        }
     }
 
     const o = new Thing();
+
+To print out the contents of a class:
+
+    var a = new Thing();
+
+    $('#output').html(JSON.stringify(a));
+
+To create an array of classes:
+
+    var b = new Array(50);
+
+    for(i=0; i<49; i++){
+        b[i] = new Thing();
+    }
+
+To call a particular function:
+
+    b[2].setX(20);  
 
 # References
 Sitepoint. [https://www.sitepoint.com/]. 2021 January 10.
