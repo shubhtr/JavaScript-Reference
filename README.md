@@ -68,6 +68,142 @@ Function | Description
 `push()`            |   add new element to the array as the last one
 `tostring()`        |   prints the string value of the elements of the array
 
+## Operators
+
+Type | Sign | Description
+--- | --- | ---
+Basic | + | Addition
+&nbsp; | - | Subtraction
+&nbsp; | * | Multiply
+&nbsp; | / | Divide
+&nbsp; | % | Remainder
+&nbsp; | ++ | Increment
+&nbsp; | -- | Decrement
+&nbsp; | (...) | Execute brackets first
+&nbsp; | &nbsp; | &nbsp;
+Logical | && | And
+&nbsp; | \|\| | Or
+&nbsp; | ! | Not
+&nbsp; | &nbsp; | &nbsp; 
+Comparison | == | Equal to 
+&nbsp; | === | Equal value and type
+&nbsp; | != | Not equal
+&nbsp; | !== | Not equal value or type
+&nbsp; | > | Greater than
+&nbsp; | < | Less than
+&nbsp; | >= | Greater than or equal to 
+&nbsp; | <= | Less than or equal to
+&nbsp; | ? | Ternary operator
+&nbsp; | &nbsp; | &nbsp;
+Bitwise | & | AND
+&nbsp; | \| | OR
+&nbsp; | ~ | NOT
+&nbsp; | ^ | XOR
+&nbsp; | << | Left shift
+&nbsp; | >> | Right shift
+&nbsp; | >>> | Zero fill right shift
+
+## Loops
+
+`for` 
+
+<ins>Description:</ins> for loop
+
+    var i;
+    for(i=0; i<5; i++) {
+        //code    
+    }
+
+
+
+`while`
+
+<ins>Description:</ins> execute a block of code while some condition is true
+
+    while (product.length > 5) {
+        //code
+    }
+
+
+
+`do...while`
+
+<ins>Description:</ins> similar to while, but executes at least as the condition is applied after the code is executed
+
+    do {
+        //code
+    } while (condition){
+        
+    }
+
+
+
+`break` 
+
+<ins>Description:</ins> break and exit the cycle based on some conditions
+
+    if (i<10)
+        break;
+
+
+
+`continue`
+
+<ins>Description:</ins> continue next iteration if some conditions are met
+
+    if (j>10)
+        continue;
+
+
+## If-Else
+
+    if (condition 1) {
+        //execute this code
+    } else if (condition 2) {
+        //execute new code
+    } else {
+        //execute if no other condition is true
+    }
+
+    
+
+## Function
+
+    function add(a, b) {
+        //code
+
+        return (a+b);
+    }
+
+
+## Output data
+
+Function | Description
+--- | ---
+alert() | show some output in a small popup window
+document.write() | write output to the html document
+console.log() | mainly used for debugging, write output on the browser console
+prompt() | prompt for user input using dialog box
+confirm() | open dialog with yes/no and return true/false based on user click
+
+## Global functions
+
+Function | Description | Example | Notes
+--- | --- | --- | ---
+encodeURI() | encodes a Uniform Resource Identifier (URI) into UTF-8 | var uri = "great.io/blog";
+&nbsp; | &nbsp; | var enc = encodeURI(uri);
+encodeURIComponent() | encoding for URI components | var uri = "great.io/blog";
+&nbsp; | &nbsp; | var enccomp = encodeURIComponent(uri);
+decodeURI() | decodes a URI created by encodeURI or similar | var dec = decodeURI(enc);
+decodeURIComponent() | decodes a URI component | var decomp = decodeURIComponent(enccomp);
+parseInt() | parses the input and returns an integer | var b = parseFloat("2003 monday");
+parseFloat() | parses the input and returns a floating-point number | var b = parseFloat("23.333");
+eval() | evaluates JavaScript code represented as a string | var x = eval("2*2"); |  `[Dangerous: DO NOT USE]`
+Number() | returns a number converted from its initial value | var y = new Date();
+&nbsp; | &nbsp; | var z = Number(y);
+isNaN() | determines whether a value is NaN or not | isNaN(25);
+isFinite() | determines whether a passed value is a finite number | isFinite(-245);
+
 
 ## Object creation
 
