@@ -165,8 +165,6 @@ Bitwise | & | AND
         //execute if no other condition is true
     }
 
-    
-
 ## Function
 
     function add(a, b) {
@@ -186,21 +184,31 @@ console.log() | mainly used for debugging, write output on the browser console
 prompt() | prompt for user input using dialog box
 confirm() | open dialog with yes/no and return true/false based on user click
 
+## String
+
+Method | Meaning | Example
+--- | --- | ---
+length | determines length of string | var a = "great.io"; <br>a.length;
+indexof() | finds position of the first occurrence of a character or text in the string | var a = "great.io is a nice website"; <br> var b = a.indexof("nice");
+lastindexof() | returns last occurrence of text in a string | var a = "great.io is nice website"; <br> var b = a.indexof("nice", 6);
+search() | searches and returns position of a specified value in string | var a = "great.io is nice website"; <br> var b = a.search("nice");
+slice() | extracts and returns part of a string as another new string | var a = "great.io is nice website"; <br> var b = a.slice(13); //will return nice website
+substring() | returns part of the string from startindex to the endindex specified. cannot take negative values unlike slice() | var a = "great.io is a nice website"; <br> var b = a.substring(0,7);
+substr() | returns the sliced out portion of a string, the second parameter being the length of the final string | var a = "great.io is nice website"; <br> var b = a.substr(13, 8);
+
+
 ## Global functions
 
 Function | Description | Example | Notes
 --- | --- | --- | ---
-encodeURI() | encodes a Uniform Resource Identifier (URI) into UTF-8 | var uri = "great.io/blog";
-&nbsp; | &nbsp; | var enc = encodeURI(uri);
-encodeURIComponent() | encoding for URI components | var uri = "great.io/blog";
-&nbsp; | &nbsp; | var enccomp = encodeURIComponent(uri);
+encodeURI() | encodes a Uniform Resource Identifier (URI) into UTF-8 | var uri = "great.io/blog"; <br> var enc = encodeURI(uri);
+encodeURIComponent() | encoding for URI components | var uri = "great.io/blog"; <br> var enccomp = encodeURIComponent(uri);
 decodeURI() | decodes a URI created by encodeURI or similar | var dec = decodeURI(enc);
 decodeURIComponent() | decodes a URI component | var decomp = decodeURIComponent(enccomp);
 parseInt() | parses the input and returns an integer | var b = parseFloat("2003 monday");
 parseFloat() | parses the input and returns a floating-point number | var b = parseFloat("23.333");
 eval() | evaluates JavaScript code represented as a string | var x = eval("2*2"); |  `[Dangerous: DO NOT USE]`
-Number() | returns a number converted from its initial value | var y = new Date();
-&nbsp; | &nbsp; | var z = Number(y);
+Number() | returns a number converted from its initial value | var y = new Date(); <br> var z = Number(y);
 isNaN() | determines whether a value is NaN or not | isNaN(25);
 isFinite() | determines whether a passed value is a finite number | isFinite(-245);
 
