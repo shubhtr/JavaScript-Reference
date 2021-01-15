@@ -195,7 +195,101 @@ search() | searches and returns position of a specified value in string | var a 
 slice() | extracts and returns part of a string as another new string | var a = "great.io is nice website"; <br> var b = a.slice(13); //will return nice website
 substring() | returns part of the string from startindex to the endindex specified. cannot take negative values unlike slice() | var a = "great.io is a nice website"; <br> var b = a.substring(0,7);
 substr() | returns the sliced out portion of a string, the second parameter being the length of the final string | var a = "great.io is nice website"; <br> var b = a.substr(13, 8);
+replace() | replaces a particular value with another | var a = "great.io is nice website"; <br> var b = a.replace("nice", "good");
+touppercase() | changes all characters into uppercase | var a = "great.io is nice website"; <br> bar b = a.touppercase(a);
+tolowercase() | changes all characters into lowercase | var a = "great.io is nice website"; <br> var b = a.tolowercase(a);
+concat() | joins two or more strings together into another string | var a = "my name is "; <br> var b = "john"; <br> var c = a.concat(": ", b);
+trim() | remove whites spaces from a string | var a = "    hi, there!   "; <br> a.trim();
+charat() | finds character at a specified position | var a = "great.io"; <br> a.charat(1) will return a
+charcodeat() | returns the unicode of character at the specified position | "great".charcodeat(0) will return 72
+split() | convert a string into array based on special character | var a = "great.io"; <br> var arr = a.split(""); <br> will return an array of characters g,r,e,a and so on...
+accessing characters using [] | access a character of string using its index | var a = "hackr.io"; <br> a[2] will return c;
 
+## Escape characters
+
+Character | Description
+--- | ---
+\\\` | Single quote
+\\" | Double quote
+\\\\ | Single backslash
+\\b | Single backslash
+\\f | Form feed
+\\n | New line
+\\t | Horizontal tab
+\\v | Vertical tab
+\\r | Carriage return
+
+## Regular Expressions
+
+Regular expressions can be in the form of pattern modifiers, metacharacters, quantifiers and brackets.
+
+<br>
+
+### Pattern modifiers
+
+Modifier | Description
+--- | ---
+e | evaluate replacement
+i | case-insensitive matching
+g | global matching - find all matches
+m | multiple line matching
+s | treat strings as a single line
+x | allow comments and whitespace in the pattern
+u | ungreedy pattern
+
+<br>
+
+### Brackets
+
+Modifier | Description
+--- | ---
+[abc] | find any of the characters between the brackets
+[^abc] | find any character which are not in the brackets
+[0-9] | used to find any digit from 0 to 9
+[A-z] | find any character from uppercase A to lowercase z
+(a|b|c) | find any of the alternatives separated with | 
+
+<br>
+
+### Metacharacters
+
+Modifier | Description
+--- | ---
+. | find a single character, except newline or line terminator
+\w | word character
+\W | non-word character
+\d | a digit
+\D | a non-digit character
+\s | whitespace character
+\S | non-whitespace character
+\b | find a match at the beginning/end of a word
+\B | a match NOT at the beginning/end of a word
+\0 | NULL character
+\n | a new line character
+\f | form feed character
+\r | carriage return character
+\t | tab character
+\v | vertical tab character
+\xxx | character specified by an octal number xxx
+\xdd | character specified by a hexadecimal number dd
+\uxxxx | Unicode character specified by a hexadecimal number xxxx
+
+<br>
+
+### Quantifiers
+
+Modifier | Description
+--- | ---
+n+ | matches string that contains at least one 'n'
+n* | any string containing zero or more occurrences of n
+n? | a string that has no or one occurrence of n
+n{X} | string that contains a sequence of X n's
+n{X,Y} | strings that contain a sequence of X to Y n's 
+n{X,} | matches string that has a sequence of at least X n's
+n$ | any string with n at the end of it
+^n | string with n at the beginning of it
+?=n | any string that is followed by the string n
+?!n | string that is NOT followed by the string n
 
 ## Global functions
 
