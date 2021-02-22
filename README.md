@@ -1,4 +1,8 @@
 # JavaScript Reference
+## by Shubhrendu Tripathi
+
+<br><br>
+
 This repository contains a collection of sample code, recipes, snippets, etc for the JavaScript programming language.
 
 ## Basics
@@ -67,6 +71,103 @@ Function | Description
 `pop()`             |   remove the last element of the array
 `push()`            |   add new element to the array as the last one
 `tostring()`        |   prints the string value of the elements of the array
+
+### Playing with array
+
+<b>map()</b>
+
+    let numbers = [18, 21, 32, 49, 5, 6, 7, 8];
+    const mapResult = numbers.map(number => number * 2);
+    console.log(mapResult)
+    // Expected output
+    // [36, 42, 64, 98,10, 12, 14, 16]
+
+Instead of <em>looping</em> through an array: The map method takes an argument which is every element of an array. Then it does some operations with that element and returns a new array.
+
+<b>filter()</b>
+
+    const names = ['Tom', 'Cruise', 'Ema', 'Watson'];
+    const result = names.filter(name => name.length < 6);
+    console.log(result)
+    // Expected output
+    // [ 'Tom', 'Ema' ]
+
+when you have to filter some elements from an array if they pass the test implemented by the provided function. It is helpful when you have a large array and want to filter some items of the same category.
+
+<b>find()</b>
+
+want to find a specific item from an array. Now you can go through the whole array and see if the item is there or not. But what if the array is populated with 1000 items?
+
+    let numbers = [18, 21, 32, 49, 5, 6, 7, 8];
+    const found = numbers.find(number => number < 10)
+    console.log(found);
+    //Expected Result: 5
+
+In this case, this find method is iterating through all the items in the array and checking if the item is less than 10.
+
+NOTE: find() will return only one item
+
+<b>indexOf()</b>
+
+want to know the index number of an item inside an array.
+
+    const fruits = ['apple', 'banana', 'mango'];
+    console.log(fruits.indexOf('banana'))
+    // Expected Output: 1
+
+<b>join()</b>
+
+have to join every element of an array with a special character (or any character). 
+
+    const fruits = ['lemon', 'orange', 'strawberry'];
+    console.log(fruits.join('+'));
+    // Expected Output: lemon+orange+strawberry
+
+<b>pop()</b>
+
+remove the last item of an array.
+
+    const animals = ['tiger', 'lion', 'tiger', 'penguin']
+    animals.pop()
+    console.log(animals)
+    //Expected Output: [ 'tiger', 'lion', 'tiger' ]
+
+<b>push()</b>
+
+add an item to an array at the last position
+
+    const animals = ['tiger', 'lion', 'tiger', 'penguin']
+    animals.push('cheetah')
+    console.log(animals)
+    //Expected Output: ['tiger', 'lion', 'tiger', 'penguin', 'cheetah']
+
+<b>shift()</b>
+
+remove the first element of an array
+
+    const fruits = ['apple', 'banana', 'mango'];
+    fruits.shift()
+    console.log(fruits)
+    //Expected Output: [ 'banana', 'mango' ]
+
+<b>unshift()</b>
+
+add an item in the first position of an array
+
+    const animals = [ 'tiger', 'lion', 'tiger', 'cheetah' ]
+    animals.unshift('cow')
+    console.log(animals)
+    //Expected Output: [ 'cow', 'tiger', 'lion', 'tiger', 'cheetah' ]
+
+<b>reverse()</b>
+
+reverse the items of an array. It means the first item will be the last and the last item will be the first. The second last item will be the second item and the second item will be the second last item and so on.
+
+    const fruits = [ 'apple', 'banana', 'mango' ]
+    fruits.reverse()
+    console.log(fruits)
+    //Expected Output: [ 'mango', 'banana', 'apple' ]
+
 
 ## Operators
 
@@ -174,15 +275,18 @@ Bitwise | & | AND
     }
 
 
-## Output data
+## Output data (Popup messages etc)
 
 Function | Description
 --- | ---
 alert() | show some output in a small popup window
-document.write() | write output to the html document
-console.log() | mainly used for debugging, write output on the browser console
 prompt() | prompt for user input using dialog box
 confirm() | open dialog with yes/no and return true/false based on user click
+&nbsp; | &nbsp;
+document.write() | write output to the html document
+console.log() | mainly used for debugging, write output on the browser console
+
+<br><br>
 
 ## String
 
@@ -396,7 +500,8 @@ To call a particular function:
     b[2].setX(20);  
 
 # References
-Sitepoint. [https://www.sitepoint.com/]. 2021 January 10.
+* Sitepoint. [https://www.sitepoint.com/]. 2021 January 10.
+* https://medium.com/swlh/10-tips-and-tricks-to-work-fast-with-array-in-javascript-986f0a454d2d
 
 <br><br>
 [![GitHub followers](https://img.shields.io/github/followers/shubhtr.svg?style=social&label=Follow%20shubhtr)](https://github.com/shubhtr) [![Twitter Follow](https://img.shields.io/twitter/follow/shubhtr.svg?style=social)](https://twitter.com/intent/follow?screen_name=shubhtr)
